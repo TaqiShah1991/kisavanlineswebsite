@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,10 +11,24 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Format the message for WhatsApp
+    const whatsappNumber = "923328521272";
+    const formattedMessage = `*New Quote Request from Website*%0A%0A` +
+      `*Name:* ${form.name}%0A` +
+      `*Email:* ${form.email}%0A` +
+      `*Phone:* ${form.phone}%0A` +
+      `*Message:* ${form.message}`;
+    
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${formattedMessage}`;
+    
+    window.open(whatsappUrl, "_blank");
+
     toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you shortly.",
+      title: "Opening WhatsApp!",
+      description: "Redirecting you to send your quote request.",
     });
+
     setForm({ name: "", email: "", phone: "", message: "" });
   };
 
@@ -22,7 +36,7 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-center text-3xl font-bold text-foreground md:text-4xl mb-2">
-          Contact <span className="text-primary">Us</span>
+          Get a <span className="text-primary">Quote</span>
         </h2>
         <div className="mx-auto mb-12 h-1 w-16 bg-accent rounded-full" />
 
@@ -49,17 +63,18 @@ const ContactSection = () => {
               placeholder="Phone Number"
               value={form.phone}
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              required
             />
             <Textarea
-              placeholder="Your Message"
+              placeholder="Tell us about your moving requirements (items, pick/drop locations)..."
               rows={5}
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               required
             />
-            <Button type="submit" className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2">
-              <Send size={16} />
-              Send Message
+            <Button type="submit" className="bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2 h-12 px-8 text-lg font-bold">
+              <MessageCircle size={20} />
+              Send Quote via WhatsApp
             </Button>
           </form>
 
