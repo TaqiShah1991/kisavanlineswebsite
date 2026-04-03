@@ -10,8 +10,8 @@ const Footer = () => {
             <h3 className="mb-4 text-lg font-bold">Get in Touch</h3>
             <div className="mb-3 h-0.5 w-10 bg-accent rounded-full" />
             <div className="space-y-2 text-sm text-navy-foreground/70">
-              <p>Office Address, City, Country</p>
-              <p>Phone: +92 XXX XXX XXXX</p>
+              <p>Sector D, Phase 8, Bahria Town, Rawalpindi, Pakistan</p>
+              <p>Phone: +92 332 8521 272 / +92 310 2785 808</p>
               <p>Email: info@kisavanlines.com</p>
             </div>
           </div>

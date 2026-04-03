@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Ship, Plane, Train, Truck } from "lucide-react";
+import { Ship, Plane, Train, Truck, Package, ClipboardCheck, Home, Warehouse, ArrowUpDown, Boxes } from "lucide-react";
 
 const services = [
   {
@@ -30,6 +30,48 @@ const services = [
     description:
       "Efficient rail freight for bulk and heavy shipments. An eco-friendly alternative that combines speed and cost savings for continental routes.",
   },
+  {
+    icon: Package,
+    title: "Packing Of Goods",
+    image: "/packing-of-goods.png",
+    description:
+      "Packing of all kinds of items i.e. household goods, personal effects, official accessories, heavy equipment's & related parts through the best available packing material in Pakistan.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Customs Clearance",
+    image: "/customs-clearance.png",
+    description:
+      "We handle all Customs Clearances processes including formalities, documentation, and examination of goods at airports, seaports, and dry ports.",
+  },
+  {
+    icon: Home,
+    title: "Door To Door Services",
+    image: "/door-to-door.png",
+    description:
+      "Providing seamless Door to Door services around the global village through air, sea & road transport networks.",
+  },
+  {
+    icon: Truck,
+    title: "Domestic Transportation",
+    image: "/domestic-transportation.png",
+    description:
+      "Comprehensive domestic transportation all over the country including shifting, loading, and unloading by lifter, crane, or manual labor.",
+  },
+  {
+    icon: Warehouse,
+    title: "Warehousing",
+    image: "/warehousing.png",
+    description:
+      "Secure storage facilities in major cities of Pakistan with 24/7 security assurance for short or long-term durations.",
+  },
+  {
+    icon: Boxes,
+    title: "Loading/Unloading Facilities",
+    image: "/loading-unloading.png",
+    description:
+      "Professional loading and unloading services available via manual labor, lifters, cranes, or chain pulleys as per cargo requirements.",
+  },
 ];
 
 const ServicesSection = () => {
@@ -53,7 +95,7 @@ const ServicesSection = () => {
         </h2>
         <div className="mx-auto mb-12 h-1 w-16 bg-accent rounded-full" />
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {services.map((service, i) => {
             const Icon = service.icon;
             return (
@@ -62,7 +104,7 @@ const ServicesSection = () => {
                 className={`group overflow-hidden rounded-lg border border-border bg-card shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 ${
                   visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
-                style={{ transitionDelay: `${i * 100}ms` }}
+                style={{ transitionDelay: `${i * 50}ms` }}
               >
                 <div className="relative h-48 overflow-hidden">
                   <img

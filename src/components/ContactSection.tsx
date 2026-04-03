@@ -71,8 +71,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-semibold text-foreground text-sm">Phone</p>
-                <p className="text-muted-foreground text-sm">+92 XXX XXX XXXX</p>
-                <p className="text-muted-foreground text-sm">+92 XXX XXX XXXX</p>
+                <p className="text-muted-foreground text-sm">+92 332 8521 272</p>
+                <p className="text-muted-foreground text-sm">+92 310 2785 808</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -90,7 +90,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-semibold text-foreground text-sm">Address</p>
-                <p className="text-muted-foreground text-sm">Office Address, City, Country</p>
+                <p className="text-muted-foreground text-sm">Sector D, Phase 8, Bahria Town, Rawalpindi, Pakistan</p>
               </div>
             </div>
           </div>
