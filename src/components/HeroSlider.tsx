@@ -42,7 +42,7 @@ const HeroSlider = () => {
           <img
             src={slide.image}
             alt={slide.headline}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-navy/60" />
         </div>

@@ -110,7 +110,7 @@ const ServicesSection = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors" />
                   <div className="absolute bottom-3 left-3 rounded-full bg-accent p-2.5 text-accent-foreground shadow-md">

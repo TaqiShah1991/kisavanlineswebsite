@@ -22,7 +22,7 @@ const CeoMessage = () => {
         }`}
       >
         <h2 className="text-center text-3xl font-bold text-foreground md:text-4xl mb-2">
-          Message from the <span className="text-primary">C.E.O</span>
+          Message from <span className="text-primary">C.E.O</span>
         </h2>
         <div className="mx-auto mb-10 h-1 w-16 bg-accent rounded-full" />
 
@@ -33,7 +33,7 @@ const CeoMessage = () => {
               <img
                 src="/ceo-new.jpg"
                 alt="CEO Portrait"
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-top"
               />
             </div>
           </div>
@@ -42,20 +42,36 @@ const CeoMessage = () => {
           <div>
             <blockquote className="text-muted-foreground italic leading-relaxed text-base md:text-lg space-y-4">
               <p>
-                "At Kisa Van Lines, we believe that every shipment tells a story. For over a decade,
-                we have been committed to delivering not just goods, but trust, reliability, and
-                peace of mind to our valued clients across the globe."
+                I am proud to let you know that we have introduced a new trend in the field of
+                packing & freight forwarding.
               </p>
               <p>
-                "Our mission is simple — to provide world-class packing, moving, and freight
-                forwarding services that exceed expectations. We invest in our people, our
-                technology, and our processes to ensure your cargo reaches its destination safely
-                and on time, every time."
+                We have maintained a friendly environment in our company, that's why our
+                professional staff has done outstanding performance to satisfy our customer
+                during the projects.
               </p>
+              <p>
+                Moreover we have been honored in the club of our clients. We always keep well
+                informed our clients during the projects and never hide or conceal any thing
+                during the operations & try our most to satisfy our customer.
+              </p>
+              <p>
+                I am sure and believe in All-mighty Allah that I and my team is sincere to do the
+                best and no any hurdle can come in our way to hinder our job and you will
+                experience after very first job a clear and pleasant change in the services which
+                we will provide you.
+              </p>
+              <p>
+                I don't want to say anything more because this is the time to do something special
+                rather than saying something, we never give the chance to our client to say
+              </p>
+              <p className="text-center font-bold not-italic text-foreground text-xl">"DO MORE"</p>
             </blockquote>
-            <div className="mt-6">
-              <p className="font-bold text-foreground text-lg">Syed Irtaza Husnain Zaidi</p>
-              <p className="text-sm text-accent font-medium">Chief Executive Officer</p>
+            <div className="mt-10 flex flex-col items-end text-right">
+              <p className="text-muted-foreground italic">Thanks &</p>
+              <p className="text-muted-foreground italic mb-6">Best Regards</p>
+              <p className="font-bold text-foreground text-xl">Syed Irtaza Zaidi</p>
+              <p className="text-accent font-medium tracking-widest">C.E.O</p>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ const AboutBanner = () => {
       <img
         src="https://images.unsplash.com/photo-1605732562742-3023a888e56e?auto=format&fit=crop&w=1920&q=80"
         alt="Shipping containers"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-primary/85" />
       <div className="relative z-10 container mx-auto px-4 text-center max-w-3xl">
