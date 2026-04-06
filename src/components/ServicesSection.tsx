@@ -112,7 +112,7 @@ const ServicesSection = () => {
                     alt={service.title}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-navy/30 group-hover:bg-navy/10 transition-colors" />
+                  <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors" />
                   <div className="absolute bottom-3 left-3 rounded-full bg-accent p-2.5 text-accent-foreground shadow-md">
                     <Icon size={20} />
                   </div>
