@@ -31,9 +31,9 @@ const CeoMessage = () => {
           <div className="flex justify-center">
             <div className="h-52 w-52 overflow-hidden rounded-full border-4 border-accent/30 shadow-lg">
               <img
-                src="/ceo.jpg"
+                src="/ceo-new.jpg"
                 alt="CEO Portrait"
-                className="h-full w-full object-cover object-top"
+                className="h-full w-full object-cover object-center"
               />
             </div>
           </div>

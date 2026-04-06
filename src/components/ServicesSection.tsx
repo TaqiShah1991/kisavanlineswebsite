@@ -33,21 +33,21 @@ const services = [
   {
     icon: Package,
     title: "Packing Of Goods",
-    image: "/packing-of-goods.png",
+    image: "/packing-new.jpg",
     description:
       "Packing of all kinds of items i.e. household goods, personal effects, official accessories, heavy equipment's & related parts through the best available packing material in Pakistan.",
   },
   {
     icon: ClipboardCheck,
     title: "Customs Clearance",
-    image: "/customs-clearance.png",
+    image: "/customs-new.jpg",
     description:
       "We handle all Customs Clearances processes including formalities, documentation, and examination of goods at airports, seaports, and dry ports.",
   },
   {
     icon: Home,
     title: "Door To Door Services",
-    image: "/door-to-door.png",
+    image: "/door-to-door-new.jpg",
     description:
       "Providing seamless Door to Door services around the global village through air, sea & road transport networks.",
   },
